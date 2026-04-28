@@ -1,0 +1,32 @@
+{
+  "name": "google-contacts-mcp",
+  "version": "0.1.0",
+  "description": "Minimal MCP server for the Google People API — read-only contact search and lookup. Companion to Claude Code's schedule-manager plugin and any agent that needs to resolve names to email addresses.",
+  "type": "module",
+  "bin": {
+    "google-contacts-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "auth": "node dist/auth-cli.js"
+  },
+  "keywords": ["mcp", "google", "contacts", "people-api"],
+  "author": "Daniel Rosehill",
+  "license": "MIT",
+  "repository": "github:danielrosehill/Google-Contacts-MCP",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
