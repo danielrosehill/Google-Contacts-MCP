@@ -21,7 +21,7 @@ All operations are **read-only**. The OAuth scope requested is `contacts.readonl
 ### 1. Install
 
 ```bash
-npm install -g google-contacts-mcp
+npm install -g @danielrosehill/google-contacts-mcp
 # or run via npx without installing
 ```
 
@@ -60,7 +60,7 @@ The `auth` command prints these for you after a successful authorisation.
 ## Wiring up to Claude Code
 
 ```bash
-claude mcp add google-contacts -- npx -y google-contacts-mcp
+claude mcp add google-contacts -- npx -y @danielrosehill/google-contacts-mcp
 ```
 
 If using env vars instead of a token file, pass them through:
@@ -70,7 +70,7 @@ claude mcp add google-contacts \
   -e GOOGLE_CONTACTS_CLIENT_ID=$GOOGLE_CONTACTS_CLIENT_ID \
   -e GOOGLE_CONTACTS_CLIENT_SECRET=$GOOGLE_CONTACTS_CLIENT_SECRET \
   -e GOOGLE_CONTACTS_REFRESH_TOKEN=$GOOGLE_CONTACTS_REFRESH_TOKEN \
-  -- npx -y google-contacts-mcp
+  -- npx -y @danielrosehill/google-contacts-mcp
 ```
 
 ## Development

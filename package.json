@@ -1,6 +1,9 @@
 {
-  "name": "google-contacts-mcp",
+  "name": "@danielrosehill/google-contacts-mcp",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Minimal MCP server for the Google People API — read-only contact search and lookup. Companion to Claude Code's schedule-manager plugin and any agent that needs to resolve names to email addresses.",
   "type": "module",
   "bin": {
